@@ -281,6 +281,35 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var depTimeInput = document.getElementById('Dep_Time');
+    var form = document.querySelector('form');
+
+    form.addEventListener('submit', function(event) {
+        var depTime = new Date(depTimeInput.value);
+        var currentTime = new Date();
+
+        if (depTime < currentTime) {
+            event.preventDefault();
+            alert('Departure time must be in the future.');
+        }
+    });
+
+    depTimeInput.addEventListener('change', function() {
+        var depTime = new Date(this.value);
+        var currentTime = new Date();
+
+        if (depTime < currentTime) {
+            this.setCustomValidity('Departure time must be in the future.');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+
+});
+</script>
+	
 </body>
 
 </html>
