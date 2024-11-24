@@ -1,0 +1,64 @@
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #3498db;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+select, input[type="datetime-local"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.btn-secondary {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #27ae60;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #3498db;
+}
