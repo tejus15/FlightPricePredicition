@@ -1,3 +1,3 @@
 # FlightPricePredicition
 
-Link to Web Application: https://tejus-flight-price-prediction-project.onrender.com/
+Link to Web Application: https://flight-price-predicition.onrender.com/predict
